@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;height: auto; margin:0 10px;
+}
+header img{ grid-column: span 12;margin: auto;}
+a{color: #360; text-decoration: none; font-size: 25px;}
+a:active{color: #360;}
+a:visited{color: #360;}
+.grid{display: grid; margin: 0 auto; max-width: 900px; width: 95%; grid-template-columns: repeat(12, 1fr); gap: 10px; grid-template-rows: auto;}
+
+.eleje{
+    margin-top: 10px;
+}
+@media(max-width: 800px){
+    a{font-size: 20px;
+        
+    }
+   .eleje>p:first-of-type{text-align: center;}
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(34, 177, 76);
+    
+}
+
+.eleje, .title{ grid-column: span 12;}
+.tortenet{
+    grid-column: span 8;
+    
+}
+@media screen and (max-width:800px) {
+   .tortenet{
+       grid-column: span 12;
+
+   }
+  
+    
+}
+@media  screen and (max-width:800px) {
+    #image {
+        grid-column: span 12;
+        margin:0 auto;
+        
+       }
+       .title{
+           text-align: center;
+       }
+      
+}
+main img{
+    grid-column: span 4;
+}
+.elonyok{grid-column: span 12;}
+table{width: 200px;}
+table tr td {border: 1px solid black;}
+.tablazat{
+    grid-area: 7 /6/ 6 /7;
+}
+.vasar, .lista{
+
+    grid-column: span 12;
+    margin:10px;
+}
+.proba {
+    grid-column: span 12;
+}
+.lista2{
+    grid-column: span 12;
+    margin:10px;
+}
+.hozzavalok{
+    grid-column: span 12;
+    font-weight: bold ;
+}
+.recept {
+    grid-column: span 12;
+    margin: 10px;
+}
+.elkeszites{
+    font-weight: bold ;
+}
+footer{
+    grid-column: span 12;
+    
+    height: 510px;
+    background-color: rgb(34, 177, 76);
+    margin:10px;
+    
+}
